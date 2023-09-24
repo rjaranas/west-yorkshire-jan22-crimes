@@ -17,10 +17,8 @@
 
 
         
-        const dataPromise = d3.json('./json/west-yorkshire-dataset.json')
-        .catch(function (error) {
-            console.error('Error on data', error)
-        })
+        const dataPromise = d3.json('json/west-yorkshire-dataset.json')
+        
 
         function drawData(dataset) {
 
@@ -140,9 +138,9 @@
        }
 
         
-       dataPromise.then(function (data) {
+        dataPromise.then(function(data) {
         const dataset = data;
-        drawData(dataset);
+        drawData(dataset)
        })
        
 
