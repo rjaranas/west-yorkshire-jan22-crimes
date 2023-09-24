@@ -1,0 +1,43 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    color: cadetblue;
+    background-color: black;
+    font-family: 'Mooli', sans-serif;
+}
+
+
+
+
+div {
+    margin: auto;
+    align-items: center;
+}
+
+#tooltip {
+    position: absolute;
+    z-index: 20;
+    background-color: beige;
+    text-align: center;
+    color: blue;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+#legend {
+    position: absolute;
+}
+
+#title-container {
+    text-align: center;
+}
+
+h1 {
+    text-decoration:underline ;
+}
+
+a {
+    color: white;
+    
+}
