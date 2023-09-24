@@ -19,7 +19,7 @@
         
         const dataPromise = d3.json('/json/west-yorkshire-dataset.json')
 
-       function drawData(dataset) {
+        function drawData(dataset) {
 
         const width = 1200
         const height = 800
@@ -59,12 +59,7 @@
         const gCell = svg.append('g')
         .attr('transform', `translate(90, 0)`)
         
-        
-        const testing = dataset.map((d) => d['Crime type']) //crime types
 
-        const test = testing.length //amount of crimes
-
-        console.log(test)
 
         const crimeCounts = d3.rollup(dataset, (v) => v.length, (d) => d['Crime type'])
         const uniqueCrimes = Array.from(crimeCounts.keys())
@@ -144,7 +139,6 @@
         
        dataPromise.then(function (data) {
         const dataset = data;
-        console.log(dataset)
         drawData(dataset);
        })
 
