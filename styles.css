@@ -1,17 +1,21 @@
-html, body {
+html {
     width: 100%;
     height: 100%;
-    color: cadetblue;
-    background-color: black;
+    color: black;
+    background-color:dimgray ;
     font-family: 'Mooli', sans-serif;
 }
 
 
-
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
 div {
-    margin: auto;
-    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 #tooltip {
@@ -23,6 +27,7 @@ div {
     padding: 10px;
     border-radius: 2px;
     font-size: 20px;
+    margin: 0 auto;
 }
 
 #legend {
