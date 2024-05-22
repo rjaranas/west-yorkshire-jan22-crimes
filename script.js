@@ -89,7 +89,10 @@
             .style('opacity', '0.9')
             tooltip.html(`Crime: ${type}<br>Amount: ${count}`)
         })
-        
+        .on('mousemove', function() {
+            tooltip.style('top', (event.pageY-100)+'px')
+            .style('left', (event.pageX+40)+'px')
+        })
         .on('mouseout', function (event, d) {
             tooltip.transition()
             .duration(50)
